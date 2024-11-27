@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Nikhil Garkoti's portfolio page showcasing links and contact details.">
+    <title>Nikhil Garkoti | Portfolio</title>
+    <style>
+        /* Global Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c3e50, #3498db);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            color: #f1c40f;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #f1c40f;
+            margin-bottom: 10px;
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 0 auto;
+            max-width: 600px;
+            color: #ecf0f1;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Links Section */
+        .links-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .link-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            text-align: center;
+            padding: 25px;
+            width: 280px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+
+        .link-card:hover {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .link-card img {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+            transition: transform 0.4s ease;
+        }
+
+        .link-card:hover img {
+            transform: rotate(360deg);
+        }
+
+        .link-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #f1c40f;
+        }
+
+        .link-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            background: #e74c3c;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .link-card a:hover {
+            background: #c0392b;
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.15);
+            animation: fadeIn 2s;
+        }
+
+        .contact-section h2 {
+            color: #f1c40f;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+        }
+
+        .contact-section a {
+            color: #f1c40f;
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nikhil Garkoti</h1>
+        <p>Learning New Things Every Day</p>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome!</h2>
+        <p>Explore my profiles, view my projects, and feel free to connect with me!</p>
+    </div>
+
+    <section class="links-section">
+        <!-- Instagram -->
+        <div class="link-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/930/413/large_2x/instagram-logo-instagram-icon-transparent-free-png.png"
+                alt="Instagram Logo">
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/nikhil_garkoti/" target="_blank">Visit Instagram</a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="link-card">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png" alt="GitHub Logo">
+            <h3>GitHub</h3>
+            <a href="https://github.com/nicksboson" target="_blank">View My GitHub</a>
+        </div>
+
+        <!-- HackerRank -->
+        <div class="link-card">
+            <img src="https://repository-images.githubusercontent.com/158023635/8d12bc80-fd39-11ea-9ba3-7466d315e281" alt="HackerRank Logo">
+            <h3>HackerRank</h3>
+            <a href="https://www.hackerrank.com/profile/nikhil_garkoti01" target="_blank">Check HackerRank</a>
+        </div>
+
+        <!-- CodeChef -->
+        <div class="link-card">
+            <img src="https://images.yourstory.com/cs/images/companies/codechef-1592821643695.jpg" alt="CodeChef Logo">
+            <h3>CodeChef</h3>
+            <a href="https://www.codechef.com/users/mob_band_91" target="_blank">Visit CodeChef</a>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you'd like to reach out, feel free to contact me at:</p>
+        <p><strong>Email:</strong> <a href="mailto:nikhil.garkoti0001@gmail.com">nikhil.garkoti0001@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nikhil Garkoti </p>
+    </footer>
+</body>
+
+</html>
