@@ -1,3 +1,2 @@
 LINK
-
-https://nicksboson.github.io/nikhil.github.io/
+[Website](https://nicksboson.github.io/Portfolio/)
